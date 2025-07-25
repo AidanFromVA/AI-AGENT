@@ -23,18 +23,19 @@ job_agent/
 │   ├── app.py                    # FastAPI or Flask API server
 │   ├── scraper/
 │   │   └── linkedin.py           # Job listing scraper (future extension)
-│   ├── recommender.py            # Resume-based job recommendation engine
-│   └── resume_parser.py          # PDF/Text resume parsing and keyword extraction
+│   ├── recommender.py            # AI-powered job recommender based on resume
+│   └── resume_parser.py          # Extract info from PDF/Text resumes
 │
 ├── ai/
-│   ├── prompt_templates/    
-│   │   ├── cover_letter.txt      # Prompt template for GPT-generated cover letters
-│   │   └── interview_prompt.txt  # Prompt template for interview Q&A
-│   ├── generator.py              # GPT-based cover letter and question generator
-│   └── langchain_agent.py        # LangChain agent for orchestrating multi-step flows
+│   ├── prompt_templates/
+│   │   ├── cover_letter.txt      # Template for GPT cover letter prompt
+│   │   └── interview_prompt.txt  # Template for GPT interview Q&A
+│   ├── generator.py              # GPT-based text generation logic
+│   └── langchain_agent.py        # LangChain-based pipeline handler
 │
 ├── frontend/
-│   ├── streamlit_app.py          # Streamlit web UI for user interaction
-│   └── pages/                    # Optional extra pages: dashboard, history, etc.
+│   ├── streamlit_app.py          # Streamlit UI entry point
+│   └── pages/                    # Optional: dashboard, saved results, etc.
 │
-└── README.md                     # Project documentation and instructions
+└── README.md                     # Project documentation
+
